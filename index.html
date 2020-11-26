@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <aside>
+        <figure>
+            <div id="avatar"></div>
+            <figcaption>Pranav v k</figcaption>
+        </figure>
+        <img src="./images/menu.svg">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+    </aside>
+    
+    <main>
+        <h1>Web Designer</h1>
+        <p>The role is responsible for designing, coding and modifying 
+            websites, from layout to function and according to a client's
+            specifications. Strive to create visually appealing sites that
+            feature user-friendly design and clear navigation.</p>
+
+        <a href="#" class="cta">my portfolio</a>
+
+    </main>
+
+    <script>
+
+        (function(){
+            var menu=document.querySelector('ul'),
+                menulink=document.querySelector('img');
+
+            menulink.addEventListener('click',function(e){
+                menu.classList.toggle('active');
+                e.preventDefault();
+            })
+        })();
+    </script>
+</body>
+</html>
